@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPTIC - Green DevOps</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: #111;
+            color: white;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .analyze-btn {
+            padding: 10px 20px;
+            background: limegreen;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .analyze-btn:hover {
+            background: white;
+            color: black;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 100px;
+            background: #000;
+            color: white;
+        }
+
+        .hero .highlight {
+            color: #f39c12;
+            font-weight: bold;
+        }
+
+        .hero .green {
+            color: limegreen;
+            font-style: italic;
+        }
+
+        .cta-btn {
+            padding: 15px 30px;
+            background: limegreen;
+            color: black;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        .cta-btn:hover {
+            background: white;
+            color: black;
+            transform: scale(1.1);
+        }
+
+        /* About Section */
+        .about {
+            padding: 80px;
+            background: #121212;
+            color: white;
+            text-align: center;
+        }
+
+        .data-cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: #1e1e1e;
+            padding: 20px;
+            border-radius: 10px;
+            width: 200px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #111;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">OPTIC</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="analyze-btn">Analyze Now</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Future of <span class="highlight">DevOps</span> is <span class="green">Green</span></h1>
+        <p>AI-powered analytics to transform your GitHub pipelines— 
+            track inefficiencies, reduce emissions, and deploy with precision</p>
+        <button class="cta-btn">Connect GitHub</button>
+        <button class="cta-btn">Optimize Code</button>
+    </section>
+    <section>
+        <p><center>bgcolor = bla
+            We make GitHub workflows faster, smarter, and greener.<br>
+            Our AI optimizes CI/CD pipelines to reduce execution time<br>
+            and carbon footprint so you ship code efficiently without extra effort.
+        </center>
+        </p>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>Optimize Smarter, Deploy <span class="green">Greener</span>.</h2>
+        <p>We make GitHub workflows faster, smarter, and greener.</p>
+        <div class="data-cards">
+            <div class="card">
+                <h3>CO₂ Emissions</h3>
+                <canvas id="co2Chart"></canvas>
+            </div>
+            <div class="card">
+                <h3>CPU Usage</h3>
+                <canvas id="cpuChart"></canvas>
+            </div>
+            <div class="card">
+                <h3>GPU Usage</h3>
+                <canvas id="gpuChart"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 OPT/CI. All rights reserved.</p>
+    </footer>
+
+    
+
+</body>
+</html>
